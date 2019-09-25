@@ -1,13 +1,12 @@
 {
   "name": "react-crm",
   "version": "1.0.7",
-  "description": "Reetek CRM using React and Material-UI",
+  "description": "CRM using React and Material-UI",
   "engines": {
     "npm": ">=3"
   },
   "scripts": {
     "start": "npm-run-all --parallel open:src",
-    "demo": "npm-run-all --parallel test:watch open:src lint:watch",
     "open:src": "babel-node tools/srcServer.js",
     "open:dist": "babel-node tools/distServer.js",
     "lint": "esw webpack.config.* src tools --color",
@@ -22,7 +21,7 @@
     "test:watch": "npm run test -- --watch",
     "open:cover": "npm run test:cover && open coverage/index.html"
   },
-  "author": "Harry Ho",
+  "author": "Sridharan Murugadass",
   "license": "MIT",
   "dependencies": {
     "flexboxgrid": "6.3.1",
@@ -105,6 +104,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/harryho/react-crm"
+    "url": "https://github.com/SridharanMurugadass/react-crm"
   }
 }
